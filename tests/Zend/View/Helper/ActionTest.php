@@ -250,10 +250,6 @@ class Zend_View_Helper_ActionTest extends PHPUnit\Framework\TestCase
     #[Group('ZF-2716')]
     public function testActionWithPartialsUseOfViewRendererReturnsToOriginatingViewState()
     {
-        // restore after #59 (zendframework1-view-helper-partial) is tagged: add it as a dev dependency and drop this skip
-        if (!class_exists('Zend_View_Helper_Partial')) {
-            $this->markTestSkipped('Zend_View_Helper_Partial (zendframework1-view-helper-partial) is not installed yet.');
-        }
         $partial = new Zend_View_Helper_Partial();
         $this->view->setScriptPath(dirname(__FILE__) . '/_files/modules/default/views/scripts/');
         $partial->setView($this->view);

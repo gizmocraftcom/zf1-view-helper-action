@@ -12,6 +12,10 @@
     "repositories": [
         {
             "type": "vcs",
+            "url": "https://github.com/gizmocraftcom/zf1-view-helper-partial"
+        },
+        {
+            "type": "vcs",
             "url": "https://github.com/gizmocraftcom/zf1-controller"
         },
         {
@@ -114,6 +118,7 @@
         "src/"
     ],
     "require-dev": {
+        "gizmocraft/zendframework1-view-helper-partial": "^2.0.0",
         "phpunit/phpunit": "^13.4.8",
         "phpstan/phpstan": "^2.3.7",
         "friendsofphp/php-cs-fixer": "^3.95.32",
